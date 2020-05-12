@@ -1,0 +1,72 @@
+/* СЕКЦИЯ ГЕРОЙ */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--bgc-accent-white);
+}
+
+.hero-order {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--bgc-accent-white);
+}
+
+/* СТИЛИ ЗАГОЛОВКОВ */
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+/* СЕКЦИЯ - ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.services {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--bgc-accent-white);
+}
+/* СЕКЦИЯ НАША КОМАНДА */
+
+.our-team {
+  background-color: var(--secondary-bgc);
+}
+
+.profession {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+/* НАВИГАЦИЯ РАБОД СТУДИИ */
+.btn {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--bgc-accent-white);
+  background-color: var(--accent-color);
+}
+
+/* СПИСОК РАБОТ СТУДИИ */
+.card-description {
+  background-color: var(--accent-color);
+  color: var(--bgc-accent-white);
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.card-name {
+  color: var(--secondary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.card-product {
+  font-size: 16px;
+  line-height: 1.9;
+}
