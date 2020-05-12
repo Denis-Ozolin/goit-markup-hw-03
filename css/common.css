@@ -23,6 +23,26 @@
   --bgc-footer: #2f303a;
 }
 
+/* СБРОС СТИЛЕЙ */
+body,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* ОБЩИЕ СТИЛИ */
 body {
   font-family: "Roboto", sans-serif;
@@ -34,14 +54,12 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bgc);
 }
-/* СБРОС СТИЛЕЙ */
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: gold;
 }
 
 /* HEADER */
@@ -73,13 +91,15 @@ header .logo-part {
 }
 
 .nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-
+.nav-link:focus,
 .current {
   color: var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
 }
+
+/* .current {
+  color: var(--accent-color);
+} */
 
 .feedback-header {
   color: var(--primary-text-color);
