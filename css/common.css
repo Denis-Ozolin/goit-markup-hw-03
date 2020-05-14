@@ -33,6 +33,16 @@ h4 {
   padding: 0;
 }
 
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -56,10 +66,9 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: gold;
 }
 
 /* HEADER */
