@@ -26,26 +26,18 @@ h4 {
   color: var(--secondary-text-color);
 }
 
-/* main .container:not(:first-child) {
-  padding: 94px 0;
-  outline: 2px solid red;
-} */
-
 /* СЕКЦИЯ ГЕРОЙ */
-.hero {
-  margin-bottom: 94px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: tomato;
+.hero .container {
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 200px;
   margin-bottom: 46px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -55,6 +47,7 @@ h4 {
 .btn {
   display: inline-block;
   padding: 10px 32px;
+  margin-bottom: 200px;
   text-align: center;
   border-radius: 4px;
 
