@@ -1,38 +1,11 @@
-/* СТИЛИ ЗАГОЛОВКОВ */
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-
-  color: var(--secondary-text-color);
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  text-transform: uppercase;
-
-  color: var(--secondary-text-color);
-}
-
-h4 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-
-  color: var(--secondary-text-color);
-}
-
 /* СЕКЦИЯ ГЕРОЙ */
-.hero .container {
+.hero {
+  padding: 200px 0;
   text-align: center;
+  background-color: pink;
 }
 
 .hero-title {
-  margin-top: 200px;
   margin-bottom: 46px;
 
   font-weight: 900;
@@ -47,7 +20,6 @@ h4 {
 .btn {
   display: inline-block;
   padding: 10px 32px;
-  margin-bottom: 200px;
   text-align: center;
   border-radius: 4px;
 
@@ -60,13 +32,62 @@ h4 {
   background-color: var(--accent-color);
 }
 
+/* ОБЩИЕ CТИЛИ СЕКЦИЙ */
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
 /* СЕКЦИЯ НАВЫКИ */
+.skils-img {
+  padding: 25px 105px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+}
+
+.big-padding {
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+/* Почему не работает? */
+/* .skils-img:nth-child(3) {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background-color: red;
+} */
+
+.skils-img:hover,
+.skils-img:focus {
+  background-color: var(--accent-color);
+}
+
 .skils-title {
   margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
 }
 
 /* СЕКЦИЯ - ЧЕМ МЫ ЗАНИМАЕМСЯ */
-.services {
+.services-link {
+  display: inline-block;
+  width: 380px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-radius: 4px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -74,6 +95,11 @@ h4 {
   text-transform: uppercase;
 
   color: var(--bgc-accent-white);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.services-img {
+  display: block;
 }
 /* СЕКЦИЯ НАША КОМАНДА */
 
@@ -81,8 +107,38 @@ h4 {
   background-color: var(--secondary-bgc);
 }
 
+.team-card {
+  display: inline-block;
+}
+
+.team-card > img {
+  margin-bottom: 30px;
+}
+
+.team-member {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
 .profession {
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
+}
+
+/* СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ */
+.customer-logo {
+  display: inline-block;
+  width: 175px;
+  height: 90px;
+  padding: 25px 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   text-align: center;
 }

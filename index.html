@@ -52,13 +52,17 @@
         </div>
       </section>
       <!-- СЕКЦИЯ НАВЫКИ -->
-      <section>
+      <section class="section">
         <div class="container">
           <!-- Скрытый заголовок -->
-          <h2>Навыки</h2>
+          <!-- <h2>Навыки</h2> -->
           <ul>
             <li>
-              <img src="./images/antenna.svg" alt="Спутниковая антенна" />
+              <img
+                class="skils-img"
+                src="./images/antenna.svg"
+                alt="Спутниковая антенна"
+              />
               <h3 class="skils-title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
@@ -66,7 +70,7 @@
               </p>
             </li>
             <li>
-              <img src="./images/clock.svg" alt="Часы" />
+              <img class="skils-img" src="./images/clock.svg" alt="Часы" />
               <h3 class="skils-title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
@@ -74,7 +78,11 @@
               </p>
             </li>
             <li>
-              <img src="./images/vector.svg" alt="График" />
+              <img
+                class="skils-img big-padding"
+                src="./images/vector.svg"
+                alt="График"
+              />
               <h3 class="skils-title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
@@ -82,7 +90,11 @@
               </p>
             </li>
             <li>
-              <img src="./images/astronaut.svg" alt="Космонавт" />
+              <img
+                class="skils-img"
+                src="./images/astronaut.svg"
+                alt="Космонавт"
+              />
               <h3 class="skils-title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
@@ -93,59 +105,62 @@
         </div>
       </section>
       <!-- СЕКЦИЯ - ЧЕМ МЫ ЗАНИМАЕМСЯ -->
-      <section>
+      <section class="section">
         <div class="container">
-          <h2>Чем мы занимаемся</h2>
+          <h2 class="section-title">Чем мы занимаемся</h2>
           <ul>
             <li>
               <img
+                class="services-img"
                 src="./images/notebook.jpg"
                 alt="Ноутбук"
                 width="380"
                 height="294"
               />
-              <a href="">
-                <p class="services">Десктопные приложения</p>
+              <a class="services-link" href="">
+                Десктопные приложения
               </a>
             </li>
             <li>
               <img
+                class="services-img"
                 src="./images/phone.jpg"
                 alt="Смартфон"
                 width="380"
                 height="294"
               />
-              <a href="">
-                <p class="services">Мобильные приложения</p>
+              <a class="services-link" href="">
+                Мобильные приложения
               </a>
             </li>
             <li>
               <img
+                class="services-img"
                 src="./images/monitor.jpg"
                 alt="Монитор"
                 width="380"
                 height="294"
               />
-              <a href="">
-                <p class="services">Дизайнерские решения</p>
+              <a class="services-link" href="">
+                Дизайнерские решения
               </a>
             </li>
           </ul>
         </div>
       </section>
       <!-- СЕКЦИЯ НАША КОМАНДА -->
-      <section class="our-team">
+      <section class="section our-team">
         <div class="container">
-          <h2>Наша команда</h2>
+          <h2 class="section-title">Наша команда</h2>
           <ul>
-            <li>
+            <li class="team-card">
               <img
                 src="./images/john.jpg"
                 alt="Джон Смит"
                 width="278"
                 height="260"
               />
-              <h4>John Smith</h4>
+              <h4 class="team-member">John Smith</h4>
               <p class="profession">Product Designer</p>
               <ul>
                 <li>
@@ -174,14 +189,14 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="./images/marta.jpg"
                 alt="Марта Стюарт"
                 width="278"
                 height="260"
               />
-              <h4>Marta Stewart</h4>
+              <h4 class="team-member">Marta Stewart</h4>
               <p class="profession">Frontend Developer</p>
               <ul>
                 <li>
@@ -210,14 +225,14 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="./images/robert.jpg"
                 alt="Роберт Джекис"
                 width="278"
                 height="260"
               />
-              <h4>Robert Jakis</h4>
+              <h4 class="team-member">Robert Jakis</h4>
               <p class="profession">Marketing</p>
               <ul>
                 <li>
@@ -246,14 +261,14 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="./images/martin.jpg"
                 alt="Мартин До"
                 width="278"
                 height="260"
               />
-              <h4>Martin Doe</h4>
+              <h4 class="team-member">Martin Doe</h4>
               <p class="profession">UI Designer</p>
               <ul>
                 <li>
@@ -286,29 +301,39 @@
         </div>
       </section>
       <!-- СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ -->
-      <section>
+      <section class="section">
         <div class="container">
-          <h2>Постоянные клиенты</h2>
+          <h2 class="section-title">Постоянные клиенты</h2>
           <ul>
             <li>
-              <a href=""><img src="./images/ya&co.svg" alt="имя компании" /></a>
+              <a class="customer-logo" href=""
+                ><img src="./images/ya&co.svg" alt="имя компании"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/tgh.svg" alt="имя компании" /></a>
+              <a class="customer-logo" href=""
+                ><img src="./images/tgh.svg" alt="имя компании"
+              /></a>
             </li>
             <li>
-              <a href=""
+              <a class="customer-logo" href=""
                 ><img src="./images/company.svg" alt="имя компании"
               /></a>
             </li>
             <li>
-              <a href=""><img src="./images/fp.svg" alt="имя компании" /></a>
+              <a class="customer-logo" href=""
+                ><img src="./images/fp.svg" alt="имя компании"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/brand.svg" alt="имя компании" /></a>
+              <a class="customer-logo" href=""
+                ><img src="./images/brand.svg" alt="имя компании"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./images/tl.svg" alt="имя компании" /></a>
+              <a class="customer-logo" href=""
+                ><img src="./images/tl.svg" alt="имя компании"
+              /></a>
             </li>
           </ul>
         </div>
