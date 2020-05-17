@@ -104,11 +104,6 @@ header .logo-part {
   display: flex;
 }
 
-.feedback-list {
-  display: flex;
-  margin-left: auto;
-}
-
 .nav-link {
   display: block;
   padding: 32px 0;
@@ -129,6 +124,15 @@ header .logo-part {
   border-bottom: 4px solid var(--accent-color);
 }
 
+.feedback-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.feedback-list > li:first-child {
+  margin-right: 50px;
+}
+
 .feedback-header {
   color: var(--primary-text-color);
 }
@@ -137,35 +141,102 @@ header .logo-part {
 .feedback-header:focus {
   color: var(--accent-color);
 }
+
 /* СТИЛИ СЕКЦИЙ */
 .section {
   padding: 94px 0;
 }
 
 /* FOOTER */
-
 footer {
   color: var(--bgc-accent-white);
   background-color: var(--bgc-footer);
+}
+
+.footer-list {
+  display: flex;
+}
+
+/* ПОДСЕКЦИЯ ОБРАТНАЯ СВЯЗЬ */
+.feedback-info {
+  margin-top: 48px;
+  margin-right: 180px;
+  margin-bottom: 28px;
+}
+
+/* логотип */
+.feedback-info > .logo {
+  margin-bottom: 10px;
 }
 
 footer .logo-part {
   color: var(--bgc-accent-white);
 }
 
+/* адрес */
+.feedback-info > p {
+  margin-bottom: 9px;
+}
+
+/* телефон и почта */
+.feedback-info > ul > li:first-child {
+  margin-bottom: 9px;
+}
+
 .feedback-footer {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .feedback-footer:hover,
 .feedback-footer:focus {
   color: var(--accent-color);
 }
 
+/* ПОДСЕКЦИЯ ПРИСОЕДИНЯЙТЕСЬ */
+.join-in {
+  margin-top: 56px;
+  margin-right: 102px;
+}
+
+.join-in > p {
+  margin-bottom: 21px;
+}
+
+.social-footer {
+  display: flex;
+}
+
+.social-footer > li:not(:last-child) {
+  margin-right: 11px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+
+  color: var(--bgc-accent-white);
+  background-color: lightblue;
+  border: 1px solid var(--accent-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--accent-color);
+}
+
+/*СЕКЦИЯ КОПИРАЙТ */
 .copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+
   font-size: 12px;
   line-height: 2;
-  text-align: center;
 
   color: rgba(255, 255, 255, 0.4);
 }

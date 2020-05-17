@@ -2,7 +2,7 @@
 .hero {
   padding: 200px 0;
   text-align: center;
-  background-color: pink;
+  background-color: thistle;
 }
 
 .hero-title {
@@ -45,6 +45,14 @@
 }
 
 /* СЕКЦИЯ НАВЫКИ */
+.skils-list {
+  display: flex;
+}
+
+.skils-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .skils-img {
   padding: 25px 105px;
   margin-bottom: 30px;
@@ -81,6 +89,20 @@
 }
 
 /* СЕКЦИЯ - ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.services-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.services-item {
+  margin-right: 30px;
+  /* margin-bottom: 30px; */
+}
+
+.services-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .services-link {
   display: inline-block;
   width: 380px;
@@ -107,9 +129,19 @@
   background-color: var(--secondary-bgc);
 }
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-card {
   display: inline-block;
+  background-color: var(--bgc-accent-white);
 }
+/* ВОПРОС
+Почему у фото сверху скругленные углы,
+ведь я не задавал border-radius: 4px; ???
+По тому что изображение само по себе такое? */
 
 .team-card > img {
   margin-bottom: 30px;
@@ -130,9 +162,31 @@
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 24px;
 }
 
 /* СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ */
+.customer-list {
+  display: flex;
+}
+
+.customer-list > li {
+  margin-left: 30px;
+}
+
+.customer-list > li:first-child {
+  margin-left: 0;
+}
+
 .customer-logo {
   display: inline-block;
   width: 175px;
