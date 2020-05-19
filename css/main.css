@@ -6,6 +6,8 @@
 }
 
 .hero-title {
+  display: inline-block;
+  max-width: 646px;
   margin-bottom: 46px;
 
   font-weight: 900;
@@ -20,7 +22,6 @@
 .btn {
   display: inline-block;
   padding: 10px 32px;
-  text-align: center;
   border-radius: 4px;
 
   font-weight: 700;
@@ -65,13 +66,6 @@
   padding-bottom: 33px;
 }
 
-/* Почему не работает? */
-/* .skils-img:nth-child(3) {
-  padding-top: 33px;
-  padding-bottom: 33px;
-  background-color: red;
-} */
-
 .skils-img:hover,
 .skils-img:focus {
   background-color: var(--accent-color);
@@ -91,12 +85,10 @@
 /* СЕКЦИЯ - ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .services-list {
   display: flex;
-  /* flex-wrap: wrap; */
 }
 
 .services-item {
   margin-right: 30px;
-  /* margin-bottom: 30px; */
 }
 
 .services-item:nth-child(3n) {
@@ -105,7 +97,7 @@
 
 .services-link {
   display: inline-block;
-  width: 380px;
+  width: 370px;
   padding-top: 27px;
   padding-bottom: 27px;
   border-radius: 4px;
@@ -135,16 +127,14 @@
 }
 
 .team-card {
-  display: inline-block;
   background-color: var(--bgc-accent-white);
 }
-/* ВОПРОС
-Почему у фото сверху скругленные углы,
-ведь я не задавал border-radius: 4px; ???
-По тому что изображение само по себе такое? */
 
-.team-card > img {
-  margin-bottom: 30px;
+.team-content {
+  padding-left: 35px;
+  padding-top: 30px;
+  padding-right: 35px;
+  padding-bottom: 24px;
 }
 
 .team-member {
@@ -159,19 +149,11 @@
 }
 
 .profession {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 16px;
-}
-
-.social {
-  display: flex;
-  justify-content: space-between;
-
-  margin-left: 35px;
-  margin-right: 35px;
-  margin-bottom: 24px;
 }
 
 /* СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ */

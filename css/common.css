@@ -68,17 +68,23 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* HEADER */
-header {
+.header-page {
   background-color: var(--bgc-accent-white);
 }
 
-header > .container {
+.header-page > .container {
   display: flex;
   align-items: center;
 }
@@ -90,13 +96,12 @@ header > .container {
   color: var(--accent-color);
 
   font-family: "Raleway", sans-serif;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
 
-header .logo-part {
+.header-page .logo-part {
   color: var(--secondary-text-color);
 }
 
@@ -104,10 +109,13 @@ header .logo-part {
   display: flex;
 }
 
+.nav-list > li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
   display: block;
   padding: 32px 0;
-  margin-right: 50px;
 
   color: var(--secondary-text-color);
 
@@ -128,7 +136,7 @@ header .logo-part {
   display: flex;
   margin-left: auto;
 }
-
+/*  ТУТ НАДО РАЗОБРАТЬСЯ. ПЕРЕБИВКА СТИЛЕЙ */
 .feedback-list > li:first-child {
   margin-right: 50px;
 }
@@ -148,20 +156,21 @@ header .logo-part {
 }
 
 /* FOOTER */
-footer {
+.footer-page {
   color: var(--bgc-accent-white);
   background-color: var(--bgc-footer);
 }
 
 .footer-list {
   display: flex;
+  align-items: baseline;
+  padding-top: 48px;
+  padding-bottom: 28px;
 }
 
 /* ПОДСЕКЦИЯ ОБРАТНАЯ СВЯЗЬ */
 .feedback-info {
-  margin-top: 48px;
   margin-right: 180px;
-  margin-bottom: 28px;
 }
 
 /* логотип */
@@ -169,17 +178,21 @@ footer {
   margin-bottom: 10px;
 }
 
-footer .logo-part {
+.footer-page .logo-part {
   color: var(--bgc-accent-white);
 }
 
 /* адрес */
-.feedback-info > p {
+.adress {
   margin-bottom: 9px;
 }
 
 /* телефон и почта */
-.feedback-info > ul > li:first-child {
+.feedback-list {
+  display: block;
+}
+
+.feedback-list > li:first-child {
   margin-bottom: 9px;
 }
 
@@ -193,20 +206,19 @@ footer .logo-part {
 
 /* ПОДСЕКЦИЯ ПРИСОЕДИНЯЙТЕСЬ */
 .join-in {
-  margin-top: 56px;
-  margin-right: 102px;
+  width: 206px;
+  /* margin-top: 56px;
+  margin-right: 102px; */
 }
 
-.join-in > p {
+.invite {
   margin-bottom: 21px;
 }
 
-.social-footer {
+/* СОЦИАЛЬНЫЕ СЕТИ */
+.social {
   display: flex;
-}
-
-.social-footer > li:not(:last-child) {
-  margin-right: 11px;
+  justify-content: space-between;
 }
 
 .social-icon {
