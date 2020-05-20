@@ -21,8 +21,10 @@
         >
         <nav>
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+            <li><a href="./index.html" class="nav-link">Студия</a></li>
+            <li>
+              <a href="./portfolio.html" class="nav-link current">Портфолио</a>
+            </li>
             <li><a href="" class="nav-link">Контакты</a></li>
           </ul>
         </nav>
@@ -41,11 +43,9 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <!-- НАВИГАЦИЯ РАБОT СТУДИИ -->
-        <section class="section">
-          <!-- скрытый заголовок -->
-          <!-- <h1>Работы веб студии</h1> -->
+      <!-- НАВИГАЦИЯ РАБОT СТУДИИ -->
+      <section class="section">
+        <div class="container">
           <ul class="nav-btn">
             <li><button class="btn">Все</button></li>
             <li><button class="btn">Веб-сайты</button></li>
@@ -53,7 +53,8 @@
             <li><button class="btn">Дизайн</button></li>
             <li><button class="btn">Маркетинг</button></li>
           </ul>
-
+          <!-- скрытый заголовок -->
+          <h1 class="visually-hidden">Работы веб студии</h1>
           <!-- СПИСОК РАБОТ СТУДИИ -->
           <ul class="card-list">
             <li class="card-item">
@@ -210,19 +211,19 @@
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <!-- СЕКЦИЯ ПОДВАЛ -->
-    <footer>
+    <footer class="footer-page">
       <div class="container">
         <ul class="footer-list">
           <li class="feedback-info">
             <a href="./index.html" lang="en" class="logo"
               >Web<span class="logo-part">Studio</span></a
             >
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
+            <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="feedback-list bottom">
               <li>
                 <a href="mailto:info@devstudio.com" class="feedback-footer"
                   >info@devstudio.com</a
@@ -236,8 +237,8 @@
             </ul>
           </li>
           <li class="join-in">
-            <p>Присоединяйтесь</p>
-            <ul class="social-footer">
+            <h3 class="invite">Присоединяйтесь</h3>
+            <ul class="social">
               <li>
                 <a
                   class="social-icon"
@@ -273,9 +274,7 @@
             </ul>
           </li>
         </ul>
-        <div class="copyright">
-          <p>2020 | Developed by GoIT Students</p>
-        </div>
+        <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
   </body>

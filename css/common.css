@@ -35,16 +35,6 @@ p {
   padding: 0;
 }
 
-body {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 a {
   text-decoration: none;
 }
@@ -57,6 +47,16 @@ ul {
 
 /* ОБЩИЕ СТИЛИ */
 body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -67,16 +67,58 @@ body {
   background-color: var(--primary-bgc);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* СКРЫТЫЕ ЗАГОЛОВКИ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* СОЦИАЛЬНЫЕ СЕТИ */
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+
+  color: var(--bgc-accent-white);
+  background-color: lightblue;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--accent-color);
 }
 
 /* HEADER */
@@ -132,27 +174,26 @@ img {
   border-bottom: 4px solid var(--accent-color);
 }
 
+/* ПОДСЕКЦИЯ ОБРАТНАЯ СВЯЗЬ HEADER*/
 .feedback-list {
   display: flex;
   margin-left: auto;
 }
-/*  ТУТ НАДО РАЗОБРАТЬСЯ. ПЕРЕБИВКА СТИЛЕЙ */
 .feedback-list > li:first-child {
   margin-right: 50px;
 }
 
 .feedback-header {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
   color: var(--primary-text-color);
 }
 
 .feedback-header:hover,
 .feedback-header:focus {
   color: var(--accent-color);
-}
-
-/* СТИЛИ СЕКЦИЙ */
-.section {
-  padding: 94px 0;
 }
 
 /* FOOTER */
@@ -168,9 +209,9 @@ img {
   padding-bottom: 28px;
 }
 
-/* ПОДСЕКЦИЯ ОБРАТНАЯ СВЯЗЬ */
+/* ПОДСЕКЦИЯ ОБРАТНАЯ СВЯЗЬ FOOTER*/
 .feedback-info {
-  margin-right: 180px;
+  margin-right: 69px;
 }
 
 /* логотип */
@@ -188,14 +229,13 @@ img {
 }
 
 /* телефон и почта */
-.feedback-list {
+.feedback-list.bottom {
   display: block;
 }
 
-.feedback-list > li:first-child {
+.feedback-list.bottom > li:first-child {
   margin-bottom: 9px;
 }
-
 .feedback-footer {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -206,38 +246,11 @@ img {
 
 /* ПОДСЕКЦИЯ ПРИСОЕДИНЯЙТЕСЬ */
 .join-in {
-  width: 206px;
-  /* margin-top: 56px;
-  margin-right: 102px; */
+  min-width: 206px;
 }
 
 .invite {
   margin-bottom: 21px;
-}
-
-/* СОЦИАЛЬНЫЕ СЕТИ */
-.social {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-icon {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-
-  text-align: center;
-  font-weight: 700;
-  font-size: 26px;
-
-  color: var(--bgc-accent-white);
-  background-color: lightblue;
-  border: 1px solid var(--accent-color);
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  background-color: var(--accent-color);
 }
 
 /*СЕКЦИЯ КОПИРАЙТ */
